@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tablet2.css" />
+    <link rel="stylesheet" href="./css/mobile2.css" />
+    <title>Project-Pets</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        gap: 10px;
+        background-color: blue;
+        padding: 10px 10px;
+        justify-content: center;
+      }
+      .grid-container > div {
+        background-color: aliceblue;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+        margin: 0 10px;
+      }
+      h1 {
+        color: rgb(29, 51, 1);
+        font-size: 60px;
+        text-align: center;
+      }
+
+      .Tl {
+        grid-column: 3;
+        grid-row: 1 / 3;
+      }
+      .goal1 {
+        display: flex;
+        margin: 10px;
+        border-bottom: 1px solid rgb(229, 233, 229);
+      }
+      .mem {
+        display: flex;
+        margin: 10px 10px 30px 10px;
+      }
+      .Scopes {
+        display: flex;
+        margin: 20px;
+      }
+      .in,
+      .out {
+        line-height: 1.5;
+        margin-left: 20px;
+      }
+
+      .Pr {
+        display: flex;
+        margin: 10px 10px 30px 10px;
+      }
+      .mem4 {
+        display: flex;
+        margin: 10px 10px 80px 10px;
+      }
+      .Tl4 {
+        display: flex;
+        margin: 10px;
+        border-bottom: 1px solid rgb(229, 233, 229);
+      }
+
+      .icon {
+        padding: 20px 20px;
+        margin: 0 30px;
+      }
+      .icon2 {
+        padding: 10px 10px;
+        margin: 0 10px;
+        align-items: center;
+      }
+      .icon3 {
+        padding: 10px 10px;
+
+        margin-right: 10px;
+        align-items: center;
+      }
+      h4 {
+        margin: 0;
+        text-align: start;
+        font-size: 20px;
+      }
+      h6 {
+        margin: 0;
+        text-align: start;
+        font-size: 17px;
+      }
+      p {
+        text-align: start;
+        font-size: 15px;
+        margin: 5px;
+      }
+      .in h4 {
+        font-size: 35px;
+        margin-right: 20px;
+      }
+      .out h4 {
+        font-size: 35px;
+      }
+      h3 {
+        text-align: start;
+        border-bottom: 1px solid rgb(201, 202, 201);
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin: 10px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Pets">
+      <h1>Project Pets</h1>
+      <div class="grid-container">
+        <div>
+          <h3>Goals</h3>
+
+          <div class="goal1">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="red"
+                class="bi bi-flag"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Nhập giống chó mèo cao cấp</h4>
+              <p>
+                Tìm kiếm các mối quan hệ tại Nhật và Châu âu để đem những giống
+                chó mèo cao cấp về trong 6 tháng tới
+              </p>
+            </div>
+          </div>
+          <div class="goal1">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="red"
+                class="bi bi-flag"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Mở thêm cửa hàng</h4>
+              <p>
+                Mở thêm cửa hàng tại Hà Nội và TP Hồ Chí Minh trong đó tại TP
+                HCM mở thêm ba cửa hàng tại các quận Trung Tâm
+              </p>
+            </div>
+          </div>
+          <div class="goal1">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="red"
+                class="bi bi-flag"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Tăn Nhân sự và Doanh Thu</h4>
+              <p>
+                Trong năm 2023 tăng Nhân sự lên 3 người cho mỗi cửa hàng, Doanh
+                số trùng bình tháng đạt trên 200 triệu cho mỗi cửa hàng
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Team</h3>
+
+          <div class="mem">
+            <div class="icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Nguyễn Văn Anh</h4>
+              <p>Tổng quản lý và giám đốc tài chính</p>
+            </div>
+          </div>
+          <div class="mem">
+            <div class="icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Hồ Văn Tài</h4>
+              <p>Phó Giám đốc Kinh doanh kiêm đối ngoại</p>
+            </div>
+          </div>
+          <div class="mem">
+            <div class="icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Lương Đình Cường</h4>
+              <p>Chủ nhiệm chăm sóc thú y và Đào tạo</p>
+            </div>
+          </div>
+          <div class="mem4">
+            <div class="icon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4>Trần Thị Thùy Linh</h4>
+              <p>Kế toán kho và phụ trách Nhân sự</p>
+            </div>
+          </div>
+        </div>
+        <div class="Tl">
+          <div>
+            <h3>Timeline</h3>
+
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-1-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Triển khai kế hoạch</h6>
+                <p>
+                  Tháng 1~2 Lên kế hoạch nhân sự, tài chính và chỉ đạo phân công
+                  nhiệm vụ cụ thể
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-2-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Xây dựng chiến dịch marketing và bán hàng</h6>
+                <p>
+                  tháng 3 Tìm kiếm nguồn hàng và thuê mặt bằng sau đó triển khai
+                  quảng cáo , quảng bá trên các phương tiện truyền thông
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-3-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Mở rộng quy mô</h6>
+                <p>
+                  Tháng 6 bắt đầu đàm phán mở rộng quy mô và số cửa hàng đồng
+                  thời tăng cường nhân sự bán hàng
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-4-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Mở rộng đối tác bán hàng cho thuê lại theo hợp đồng</h6>
+                <p>
+                  Tháng 9 bắt đầu triển khai dịch vụ cho thuê thú cưng với ưu
+                  đãi kèm theo
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-5-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Dịch vụ mua lại thú cưng</h6>
+                <p>
+                  Tháng 11 Bắt đầu thêm nhân sự thú y để có thể mở sang việc mua
+                  lại thú cưng
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-6-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Mở rộng sang bán lợn, chuột,..Theo nhu cầu thị trường</h6>
+                <p>
+                  Tháng 12 mở rộng mạng lưới đối tác và đại ký đồng thời nhập
+                  các mặt hàng mới
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-7-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.37 5.11h3.972v.07L6.025 12H7.42l3.258-6.85V4.002H5.369v1.107Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>Tiếp tục các chiến dịch marketing mới và tăng nhân sự</h6>
+                <p>
+                  Sau khi kinh doanh 1 năm đánh giá lại các mục tiêu đạt được để
+                  mở rộng sang bán thức ăn, các phụ kiện đắt tiền hơn cho thú
+                  cưng
+                </p>
+              </div>
+            </div>
+            <div class="Tl4">
+              <div class="icon3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="46"
+                  fill="#f435"
+                  class="bi bi-8-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-5.03 1.803c0-1.248-.943-1.84-1.646-1.992v-.065c.598-.187 1.336-.72 1.336-1.781 0-1.225-1.084-2.121-2.654-2.121-1.57 0-2.66.896-2.66 2.12 0 1.044.709 1.589 1.33 1.782v.065c-.697.152-1.647.732-1.647 2.003 0 1.39 1.19 2.344 2.953 2.344 1.77 0 2.989-.96 2.989-2.355Zm-4.347-3.71c0 .739.586 1.255 1.383 1.255s1.377-.516 1.377-1.254c0-.733-.58-1.23-1.377-1.23s-1.383.497-1.383 1.23Zm-.281 3.645c0 .838.72 1.412 1.664 1.412.943 0 1.658-.574 1.658-1.412 0-.843-.715-1.424-1.658-1.424-.944 0-1.664.58-1.664 1.424Z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h6>
+                  Marketing cả online và offline để phát triển thương hiệu
+                </h6>
+                <p>
+                  Xây dựng cộng đồng để duy trì khách hàng đồng thời đẩy mạnh
+                  phát triển thương hiệu để gia tăng độ nhận biết, sau đó chuyển
+                  nhượng thương hiệu để nâng cao hiệu quả kinh doanh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div><h3>Scopes</h3></div>
+          <div class="Scopes">
+            <div class="in">
+              <h4>In</h4>
+              <p>
+                Cần tìm các đối tác, bạn hàng trong và ngoài nước có thể là các
+                cá nhân, hộ kinh doanh và các nhà nuôi thú chuyên nghiệp, các
+                công ty chuyên kinh doanh và nuôi thú để nhập hàng.
+              </p>
+            </div>
+            <div class="out">
+              <h4>Out</h4>
+              <p>
+                Mở cửa hàng tại các khu dân cư đông đúc , các đô thị có thu nhập
+                cao để tiếp cận các khách hàng tiềm năng
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>Primary</h3>
+
+            <div class="Pr">
+              <div class="icon2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-question-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p>
+                  Ưu tiên số 1 cho việc nhập hàng và mở rộng địa bàn kinh doanh
+                  hiện tại, Chăm sóc kỹ các con thú đang có, đồng thời phải khảo
+                  sát thị trường để nhanh chóng có chiến lược bán hàng phù hợp.
+                </p>
+              </div>
+            </div>
+            <div class="Pr">
+              <div class="icon2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                  class="bi bi-question-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p>
+                  Tiếp theo xây dựng các chiến dịch bài bản để tiếp cận khách
+                  hàng nhanh chóng , mang lại hiệu quả sử dụng vốn
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./digital.js"></script>
+  </body>
+</html>
